@@ -3,7 +3,7 @@
 # Developer
 ** Antonio Gervasio
 # Web-Developer
-** Francy Aulicino
+** Francesco Aulicino
 # Contributo
 ** L'antivirus è stato testato ed è affidabile al 100%
 # Il Software è stato creato in italia
