@@ -4,6 +4,9 @@
 ** Antonio Gervasio
 # Web-Developer
 ** Francesco Aulicino
+# Designer
+** Antonio Gervasio
+** Francesco Aulicino
 # Contributo
 ** L'antivirus è stato testato ed è affidabile al 100%
 
