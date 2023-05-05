@@ -1,9 +1,10 @@
-# Website ufficial for syphora antivirus
+# Sito Ufficiale Di Syphora Antivirus
 - Open source
-# Creators
-- Developer: Antonio Gervasio
-- Web-Developer: Francy Aulicino
+# Developer
+- Antonio Gervasio
+# Web-Developer
+Francy Aulicino
 # Contribution 
-- Antivirus Malware 100% Affidability
-# Is software is created and italy
-- for software is created italy
+- L'antivirus è stato testato ed è affidabile al 100%
+# Il Software è stato creato in italia
+- Il Software è stato creato in italia
