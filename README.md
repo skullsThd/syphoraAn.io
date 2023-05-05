@@ -17,3 +17,5 @@
 ** Gli update saranno fatti in javascript, anche il software sarà disponibile in data molto presto
 
 ** Stiamo Provando Alcuni HTML e CSS Per avere un tema accattivante, speriamo Che nella uscita vi piacerà il sito data 06/05/2023 scritto da Antonio Gervasio
+# Versione
+** 1.1
