@@ -1,197 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Syphora Antivirus</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Syphora Antivirus</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
-        </li>
-      </ul>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Syphora Antivirus</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Prodotti</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Servizi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contatti</a>
+          </li>
+        </ul>
+        <button class="btn theme-toggle"><i class="bi bi-moon"></i></button>
+      </div>
     </div>
   </nav>
 
-  <header class="bg-light">
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-8 text-center">
-          <h1>Secure Your PC with Syphora Antivirus</h1>
-          <p class="lead">Get the best protection against viruses, malware, spyware and other online threats.</p>
-          <a href="#" class="btn btn-primary btn-lg mt-4">Download Now</a>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <section id="features">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-8 text-center">
-          <h2 class="section-title">Why Syphora Antivirus?</h2>
-          <p class="section-subtitle">With Syphora Antivirus, you can enjoy a safer and more secure online experience. Here's why:</p>
-        </div>
-      </div>
-      <div class="row mt-4">
-        <div class="col-md-4">
-          <div class="card border-0">
-            <div class="card-body">
-              <i class="fas fa-shield-alt fa-4x mb-4"></i>
-              <h3 class="feature__title">Advanced Protection</h3>
-              <p class="card-text">Syphora Antivirus provides advanced protection against viruses, malware, spyware and other online threats.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-  <div class="card border-0">
-    <div class="card-body">
-      <i class="bi bi-laptop icon"></i>
-      <h5 class="card-title mb-3">Protection for all devices</h5>
-      <p class="card-text">Syphora Antivirus offers complete protection for all your devices, including Windows, Mac, iOS, and Android.</p>
+      <h1 class="display-4">Protezione avanzata per il tuo dispositivo</h1>
+      <p class="lead">Syphora Antivirus ti offre la massima sicurezza contro tutti i tipi di minacce online.</p>
+      <a href="#" class="btn btn-primary btn-lg">Acquista ora</a>
     </div>
   </div>
-</div>
-<div class="col-md-4">
-  <div class="card border-0">
-    <div class="card-body">
-      <i class="bi bi-shield-check icon"></i>
-      <h5 class="card-title mb-3">Real-time Protection</h5>
-      <p class="card-text">Our advanced real-time protection technology detects and removes viruses, malware, and spyware before they can harm your devices.</p>
-    </div>
-  </div>
-</div>
-<div class="col-md-4">
-  <div class="card border-0">
-    <div class="card-body">
-      <i class="bi bi-shield-lock icon"></i>
-      <h5 class="card-title mb-3">Secure Online Browsing</h5>
-      <p class="card-text">Syphora Antivirus protects your online activities from malicious websites, phishing scams, and other online threats.</p>
-    </div>
-  </div>
-</div>
-    </div>
-  </section>
 
-  <section id="pricing" class="py-5">
-    <div class="container">
-      <div class="text-center">
-        <h2 class="section-title mb-5">Pricing</h2>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h5 class="card-title">Basic Plan</h5>
-              <p class="card-text">Protects up to 3 devices</p>
-              <h3 class="card-price">$29<span class="period">/year</span></h3>
-              <a href="#" class="btn btn-primary">Buy Now</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h5 class="card-title">Standard Plan</h5>
-              <p class="card-text">Protects up to 5 devices</p>
-              <h3 class="card-price">$49<span class="period">/year</span></h3>
-              <a href="#" class="btn btn-primary">Buy Now</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h5 class="card-title">Premium Plan</h5>
-              <p class="card-text">Protects up to 10 devices</p>
-              <h3 class="card-price">$89<span class="period">/year</span></h3>
-              <a href="#" class="btn btn-primary">Buy Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="py-5 bg-primary text-white">
-    <div class="container">
-      <div class="text-center">
-        <h2 class="section-title mb-5">Contact Us</h2>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <form>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your Name">
-            </div>
-            <div class="form-group">
-              <input type="email" class="form-control" placeholder="Your Email">
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-outline-light">Submit</button>
-          </form>
-        </div>
-        <div class="col-md-6">
-          <div class="contact-info">
-            <p><i class="bi bi-geo-alt"></i> 123 Main Street, New York, NY 10001</p>
-            <p><i class="bi bi-envelope"></i> info@syphora.com</p>
-            <p><i class="bi bi-telephone"></i> +1 123 456 7890</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer class="bg-dark text-light">
-  <div class="container py-4">
+  <!-- Features -->
+  <div class="container">
+    <h2 class="text-center mb-5">Le nostre caratteristiche</h2>
     <div class="row">
       <div class="col-md-4">
-        <h5>Contact Us</h5>
-        <ul class="list-unstyled">
-          <li><a href="tel:+1234567890" class="text-light">+1 (234) 567-890</a></li>
-          <li><a href="mailto:info@syphora.com" class="text-light">info@syphora.com</a></li>
-          <li><a href="#" class="text-light">Live Chat</a></li>
-        </ul>
+        <div class="card border-0">
+          <div class="card-body text-center">
+            <i class="bi bi-shield-lock-fill fs-1 text-primary mb-3"></i>
+            <h5 class="card-title">Protezione completa</h5>
+            <p class="card-text">Syphora Antivirus ti protegge da virus, spyware, malware, ransomware e altre minacce online.</p>
+          </div>
+        </div>
       </div>
       <div class="col-md-4">
-        <h5>Follow Us</h5>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-light">Facebook</a></li>
-          <li><a href="#" class="text-light">Twitter</a></li>
-          <li><a href="#" class="text-light">Instagram</a></li>
-        </ul>
+  <div class="card border-0">
+    <div class="card-body text-center">
+      <i class="bi bi-shield-shaded fs-1 text-primary mb-3"></i>
+      <h5 class="card-title">Protezione avanzata</h5>
+      <p class="card-text">Syphora antivirus offre una protezione avanzata contro le minacce più recenti grazie al nostro algoritmo di intelligenza artificiale.</p>
+    </div>
+  </div>
+</div>
+<footer class="py-3 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p class="mb-0">Syphora Antivirus &copy; 2022. All rights reserved.</p>
       </div>
-      <div class="col-md-4">
-        <h5>Legal</h5>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-light">Terms of Service</a></li>
-          <li><a href="#" class="text-light">Privacy Policy</a></li>
+      <div class="col-md-6 text-end">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+          <li class="list-inline-item">•</li>
+          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
         </ul>
       </div>
     </div>
   </div>
 </footer>
+
+<!-- Bootstrap JS bundle with Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
