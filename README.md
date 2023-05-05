@@ -1,6 +1,6 @@
-# website ufficial for syphora antivirus
+# Website ufficial for syphora antivirus
 - Open source
-# creators
+# Creators
 - Developer: Antonio Gervasio
 - Web-Developer: Francy Aulicino
 # Contribution 
