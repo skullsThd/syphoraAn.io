@@ -18,6 +18,10 @@
 
 ** Stiamo Provando Alcuni HTML e CSS Per avere un tema accattivante, speriamo Che nella uscita vi piacerà il sito data 06/05/2023 scritto da Antonio Gervasio
 
-** abbiamo risolto alcuni bug nel html inoltre abbiamo aggiunto una foto 
+** abbiamo risolto alcuni bug nel html inoltre abbiamo aggiunto una foto
+
+** Prima Versione Ufficializzata
 # Versione
-** 1.1 Non ufficializzata
+** 1.0
+
+** Ora Stiamo Lavorando sulla versione 1.1 speriamo che vi piaccia
