@@ -13,7 +13,7 @@
 ** Contributo scritto da Antonio Gervasio
 # Il Software è stato creato in italia
 ** Il Software è stato creato interamente in italia
-# Notizie
+# ChangeLog
 ** Gli update saranno fatti in javascript, anche il software sarà disponibile in data molto presto
 
 ** Stiamo Provando Alcuni HTML e CSS Per avere un tema accattivante, speriamo Che nella uscita vi piacerà il sito data 06/05/2023 scritto da Antonio Gervasio
@@ -25,7 +25,9 @@
 ** Nella Versione 1.1 vorremmo risolvere più bug
 
 ** Tra Pochi Giorni Rilasceremo Il Software
+
+** Stiamo migliorando la scrittura in italiano sul sito
 # Versione
-** 1.0
+** 1.0 beta
 
 ** Ora Stiamo Lavorando sulla versione 1.1 speriamo che vi piaccia
