@@ -21,6 +21,10 @@
 ** abbiamo risolto alcuni bug nel html inoltre abbiamo aggiunto una foto
 
 ** Prima Versione Ufficializzata
+
+** Nella Versione 1.1 vorremmo risolvere più bug
+
+** Tra Pochi Giorni Rilasceremo Il Software
 # Versione
 ** 1.0
 
