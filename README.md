@@ -13,6 +13,8 @@
 ** Contributo scritto da Antonio Gervasio
 # Il Software è stato creato in italia
 ** Il Software è stato creato interamente in italia
+
+** Il Sito Web è stato approvato da alcuni svillupatori di siti web
 # ChangeLog
 ** Gli update saranno fatti in javascript, anche il software sarà disponibile in data molto presto
 
