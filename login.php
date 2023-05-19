@@ -1,8 +1,8 @@
 <?php
 // Verifica se sono stati inviati i dati di login
 if (isset($_POST['username']) && isset($_POST['password'])) {
-  $username = $_POST['username'];
-  $password = $_POST['password'];
+  $username = $_POST['Nome Utente'];
+  $password = $_POST['Parola Ordine];
 
   // Esegui qui il codice per il controllo delle credenziali
   // Ad esempio, puoi confrontare i valori con un database di utenti
