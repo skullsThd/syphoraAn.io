@@ -29,8 +29,12 @@
 
 ** Tra Pochi Giorni Rilasceremo Il Software
 
+** Stiamo Per Rilasciare la 1.1 beta
+
+** Il 15 giugno rilasceremo il Software
+
 ** Stiamo migliorando la scrittura in italiano sul sito
 # Versione
 ** 1.0 beta
 
-** Ora Stiamo Lavorando sulla versione 1.1 speriamo che vi piaccia
+** Ora Stiamo Lavorando sulla versione 1.1 beta speriamo che vi piaccia
