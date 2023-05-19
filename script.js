@@ -14,7 +14,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
   
   // Visualizza il countdown
-  document.getElementById("countdown").innerHTML = "Il sito sarà di nuovo disponibile in " + days + " giorni, " + hours + " ore, " + minutes + " minuti e " + seconds + " secondi.";
+  document.getElementById("countdown").innerHTML = "Il sito sarà di nuovo disponibile tra " + days + " giorni, " + hours + " ore, " + minutes + " minuti e " + seconds + " secondi.";
   
   // Se il countdown è terminato, visualizza il messaggio "Sito disponibile"
   if (timeLeft < 0) {
