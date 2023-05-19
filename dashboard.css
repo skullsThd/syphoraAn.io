@@ -1,0 +1,44 @@
+/* Reset dei margini e dei padding */
+body, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Stile del corpo della dashboard */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Stile dell'intestazione */
+h1 {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Stile dei bottoni */
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Stile dei contenitori dei bottoni */
+.button-container {
+  text-align: center;
+  margin-top: 30px;
+}
