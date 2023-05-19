@@ -1,17 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-  <title>Utente</title>
-  <link rel="stylesheet" type="text/css" href="login.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syphora Antivirus</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
-    <h1>Login</h1>
-    <form id="login-form" method="POST" action="login.php">
-      <input type="text" name="username" placeholder="Nome Utente" required>
-      <input type="password" name="password" placeholder="Parola D'ordine" required>
-      <button type="submit">Login</button>
-    </form>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card mt-5">
+          <div class="card-body">
+            <h3 class="card-title text-center">Utente</h3>
+            <form>
+              <div class="mb-3">
+                <label for="username" class="form-label">Nome Utente</label>
+                <input type="text" class="form-control" id="username" placeholder="Inserisci il tuo username">
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Parola D'ordine</label>
+                <input type="password" class="form-control" id="password" placeholder="Inserisci la tua password">
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Accedi</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
