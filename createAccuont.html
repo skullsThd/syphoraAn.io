@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registrazione</title>
+  <title>Crea Account</title>
   <!-- Collegamento ai file CSS di Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
   <!-- Stili personalizzati -->
@@ -11,7 +11,7 @@
     body {
       background-color: #f2f2f2;
     }
-    .registration-form {
+    .create-account-form {
       max-width: 400px;
       margin: 0 auto;
       background-color: #6c757d;
@@ -24,22 +24,26 @@
 </head>
 <body>
   <div class="container">
-    <div class="registration-form">
-      <h2 class="mb-4">Crea un nuovo account</h2>
-      <form id="registrationForm">
+    <div class="create-account-form">
+      <h2 class="mb-4">Crea Account</h2>
+      <form action="verification.html" method="POST">
         <div class="mb-3">
           <label for="username" class="form-label">Nome utente</label>
           <input type="text" class="form-control" id="username" name="username" required>
         </div>
         <div class="mb-3">
-          <label for="email" class="form-label">E-mail</label>
-          <input type="email" class="form-control" id="email" name="email" required>
-        </div>
-        <div class="mb-3">
           <label for="password" class="form-label">Password</label>
           <input type="password" class="form-control" id="password" name="password" required>
         </div>
-        <button type="submit" class="btn btn-primary">Registrati</button>
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label">Conferma Password</label>
+          <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Crea Account</button>
       </form>
     </div>
   </div>
@@ -48,41 +52,25 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      var registrationForm = document.getElementById('registrationForm');
-      registrationForm.addEventListener('submit', function(event) {
+      var form = document.querySelector('form');
+      form.addEventListener('submit', function(event) {
         event.preventDefault();
         var username = document.getElementById('username').value;
-        var email = document.getElementById('email').value;
         var password = document.getElementById('password').value;
+        var confirmPassword = document.getElementById('confirmPassword').value;
+        var email = document.getElementById('email').value;
 
-        // Esempio di invio codice di conferma via e-mail
-        var confirmationCode = generateConfirmationCode();
-        console.log('Codice di conferma:', confirmationCode);
-        // Inviare il codice di conferma all'indirizzo e-mail specificato
-
-        // Esempio di prompt per l'inserimento del codice di conferma
-        var userConfirmationCode = prompt('Inserisci il codice di conferma');
-
-        // Esempio di verifica del codice di conferma
-        if (userConfirmationCode === confirmationCode) {
-          alert('Registrazione completata con successo');
-          window.location.href = 'login.html';
+        // Esempio di verifica della corrispondenza delle password
+        if (password === confirmPassword) {
+          // Invia la richiesta di verifica a Google
+          // Esegue il reindirizzamento solo se il codice di verifica è corretto
+          window.location.href = 'verification.html?username=' + encodeURIComponent(username) +
+            '&password=' + encodeURIComponent(password) +
+            '&email=' + encodeURIComponent(email);
         } else {
-          alert('Codice di conferma errato');
+          alert('Le password non corrispondono');
         }
       });
-
-      function generateConfirmationCode() {
-        // Generazione del codice di conferma casuale
-        var codeLength = 6;
-        var characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-        var code = '';
-        for (var i = 0; i < codeLength; i++) {
-          var randomIndex = Math.floor(Math.random() * characters.length);
-          code += characters.charAt(randomIndex);
-        }
-        return code;
-      }
     });
   </script>
 </body>
