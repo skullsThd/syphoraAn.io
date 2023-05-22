@@ -63,90 +63,51 @@
 </html>
 -->
 <!DOCTYPE html>
-<html lang="it">
+<html>
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Syphora Antivirus - Proteggi il tuo mondo digitale</title>
+  <title>Syphora Antivirus</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
   <style>
-    /* Stili personalizzati */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-    }
+    @media (max-width: 767px) {
+      .navbar {
+        margin-bottom: 0;
+      }
 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
+      .navbar-brand {
+        padding: 15px;
+      }
 
-    .section-title {
-      margin-top: 40px;
-    }
+      .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
 
-    .section-subtitle {
-      margin-bottom: 40px;
-      font-size: 18px;
-    }
+      .section-title,
+      .section-subtitle {
+        text-align: center;
+      }
 
-    .feature {
-      text-align: center;
-      margin-bottom: 40px;
-    }
+      .pricing-card {
+        margin-bottom: 30px;
+      }
 
-    .feature i {
-      font-size: 48px;
-      margin-bottom: 20px;
-      color: #337ab7;
-    }
-
-    .pricing-card {
-      text-align: center;
-      margin-bottom: 40px;
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .pricing-card .card-header h3 {
-      margin-top: 0;
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    .price {
-      font-size: 36px;
-      margin-bottom: 20px;
-      color: #337ab7;
-    }
-
-    .btn-primary {
-      background-color: #337ab7;
-      border-color: #337ab7;
-    }
-
-    .btn-primary:hover,
-    .btn-primary:focus,
-    .btn-primary:active {
-      background-color: #286090;
-      border-color: #204d74;
-    }
-
-    footer {
-      background-color: #333;
-      padding: 20px 0;
-      color: #fff;
+      .footer {
+        padding: 30px 0;
+      }
     }
   </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -154,53 +115,23 @@
         </button>
         <a class="navbar-brand" href="#">Syphora Antivirus</a>
       </div>
-      <div class="collapse navbar-collapse" id="navbar-collapse">
+      <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#features">Funzionalità</a></li>
-          <li><a href="#pricing">Prezzi</a></li>
-          <li><a href="#contact">Contatti</a></li>
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#features">Caratteristiche</a></li>
+          <li><a href="#pricing">Piani</a></li>
+          <li><a href="#contact">Contattaci</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <header>
-    <div class="container text-center">
-      <h1>Syphora Antivirus</h1>
-      <p class="section-subtitle">Proteggi il tuo mondo digitale</p>
-    </div>
-  </header>
-
   <section id="home">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="section-title">Benvenuto in Syphora Antivirus</h2>
-          <p class="section-subtitle">La soluzione definitiva per la protezione del tuo computer</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="feature">
-            <i class="fa fa-shield"></i>
-            <h3>Protezione in tempo reale</h3>
-            <p>Scansiona e rimuove i virus in tempo reale per proteggere il tuo computer dagli attacchi informatici.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="feature">
-            <i class="fa fa-cog"></i>
-            <h3>Semplice da usare</h3>
-            <p>Interfaccia intuitiva e facile da usare, adatta anche per gli utenti meno esperti.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="feature">
-            <i class="fa fa-envelope"></i>
-            <h3>Protezione email</h3>
-            <p>Scansiona le tue email in arrivo e in uscita per rilevare e bloccare eventuali allegati dannosi.</p>
-          </div>
+          <h1 class="section-title">Benvenuto in Syphora Antivirus</h1>
+          <p class="section-subtitle">Proteggi il tuo computer da minacce dannose</p>
         </div>
       </div>
     </div>
@@ -210,30 +141,30 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="section-title">Funzionalità</h2>
-          <p class="section-subtitle">Le nostre potenti funzionalità ti offrono la massima protezione</p>
+          <h2 class="section-title">Le nostre caratteristiche</h2>
+          <p class="section-subtitle">Scopri cosa rende Syphora Antivirus il miglior software di protezione</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4">
           <div class="feature">
             <i class="fa fa-shield"></i>
-            <h3>Scansione avanzata</h3>
-            <p>Esegui una scansione approfondita del tuo sistema per individuare e rimuovere minacce nascoste.</p>
+            <h3>Protezione avanzata</h3>
+            <p>Il nostro antivirus offre una protezione avanzata contro virus, malware e altre minacce online.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="feature">
             <i class="fa fa-refresh"></i>
             <h3>Aggiornamenti automatici</h3>
-            <p>Mantieni il tuo antivirus sempre aggiornato con gli ultimi pacchetti di definizioni dei virus.</p>
+            <p>Mantieni il tuo antivirus sempre aggiornato con le ultime definizioni dei virus e le nuove funzionalità.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="feature">
-            <i class="fa fa-lock"></i>
-            <h3>Protezione dei dati sensibili</h3>
-            <p>Proteggi i tuoi dati personali e sensibili da accessi non autorizzati e furti di identità.</p>
+            <i class="fa fa-life-ring"></i>
+            <h3>Supporto 24/7</h3>
+            <p>Il nostro team di supporto è disponibile 24 ore su 24, 7 giorni su 7, per assisterti in caso di problemi.</p>
           </div>
         </div>
       </div>
@@ -244,44 +175,47 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="section-title">Prezzi</h2>
-          <p class="section-subtitle">Scopri il piano che si adatta alle tue esigenze</p>
+          <h2 class="section-title">I nostri piani</h2>
+          <p class="section-subtitle">Scegli il piano di abbonamento più adatto alle tue esigenze</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4">
           <div class="pricing-card">
-            <div class="card-header">
-              <h3>Piano Base</h3>
-            </div>
-            <div class="price">$9.99/mese</div>
-            <p>Protezione antivirus di base</p>
-            <p>Scansione automatica</p>
-            <p>Aggiornamenti regolari</p>
+            <h3>Base</h3>
+            <p class="price">$9.99/mese</p>
+            <ul class="features">
+              <li>Protezione antivirus</li>
+              <li>Aggiornamenti automatici</li>
+              <li>Supporto via email</li>
+            </ul>
             <a href="#" class="btn btn-primary">Scegli</a>
           </div>
         </div>
         <div class="col-md-4">
           <div class="pricing-card">
-            <div class="card-header">
-              <h3>Piano Avanzato</h3>
-            </div>
-            <div class="price">$19.99/mese</div>
-            <p>Protezione antivirus avanzata</p>
-            <p>Scansione approfondita</p>
-            <p>Protezione email</p>
+            <h3>Pro</h3>
+            <p class="price">$19.99/mese</p>
+            <ul class="features">
+              <li>Protezione antivirus</li>
+              <li>Aggiornamenti automatici</li>
+              <li>Supporto via chat</li>
+              <li>Protezione anti-ransomware</li>
+            </ul>
             <a href="#" class="btn btn-primary">Scegli</a>
           </div>
         </div>
         <div class="col-md-4">
           <div class="pricing-card">
-            <div class="card-header">
-              <h3>Piano Premium</h3>
-            </div>
-            <div class="price">$29.99/mese</div>
-            <p>Tutte le funzionalità avanzate</p>
-            <p>Protezione dati sensibili</p>
-            <p>Assistenza 24/7</p>
+            <h3>Ultimate</h3>
+            <p class="price">$29.99/mese</p>
+            <ul class="features">
+              <li>Protezione antivirus</li>
+              <li>Aggiornamenti automatici</li>
+              <li>Supporto telefonico</li>
+              <li>Protezione anti-ransomware</li>
+              <li>Backup automatico</li>
+            </ul>
             <a href="#" class="btn btn-primary">Scegli</a>
           </div>
         </div>
@@ -294,36 +228,49 @@
       <div class="row">
         <div class="col-md-12">
           <h2 class="section-title">Contattaci</h2>
-          <p class="section-subtitle">Hai domande o necessiti di supporto? Contattaci</p>
+          <p class="section-subtitle">Hai domande o richieste? Contattaci e saremo felici di aiutarti.</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 col-md-offset-3">
+        <div class="col-md-6">
           <form>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Nome">
+              <label for="name">Nome</label>
+              <input type="text" class="form-control" id="name">
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" placeholder="Email">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email">
             </div>
             <div class="form-group">
-              <textarea class="form-control" rows="5" placeholder="Messaggio"></textarea>
+              <label for="message">Messaggio</label>
+              <textarea class="form-control" id="message" rows="5"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-block">Invia messaggio</button>
+            <button type="submit" class="btn btn-primary">Invia</button>
           </form>
+        </div>
+        <div class="col-md-6">
+          <p><i class="fa fa-envelope"></i> support@syphora.com</p>
+          <p><i class="fa fa-phone"></i> +1 123-456-7890</p>
+          <p><i class="fa fa-map-marker"></i> Via dell'Antivirus 123, Città, Stato, CAP</p>
         </div>
       </div>
     </div>
   </section>
 
-  <footer>
-    <div class="container text-center">
-      <p>&copy; 2023 Syphora Antivirus. Tutti i diritti riservati.</p>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>&copy; 2023 Syphora Antivirus. Tutti i diritti riservati.</p>
+        </div>
+      </div>
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
