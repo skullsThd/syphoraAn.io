@@ -1,84 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coming Soon</title>
-  <!-- Bootstrap CSS -->
+  <!-- Collegamento ai file CSS di Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <!-- Stili personalizzati -->
   <style>
     body {
-      background-color: #f8f9fa;
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
     }
 
     .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .countdown {
       text-align: center;
+      margin-top: 200px;
     }
 
-    .countdown h1 {
-      font-size: 48px;
+    .timer {
+      font-size: 36px;
       font-weight: bold;
+      color: #333;
       margin-bottom: 20px;
-    }
-
-    .countdown p {
-      font-size: 18px;
-      color: #888;
     }
   </style>
 </head>
-
 <body>
   <div class="container">
-    <div class="countdown">
-      <h1>Coming Soon</h1>
-      <p>We are making some changes and will be back soon!</p>
-      <div id="timer"></div>
-    </div>
+    <h1>Stiamo apportando modifiche</h1>
+    <p>Ritorneremo presto</p>
+    <div class="timer" id="countdown"></div>
   </div>
 
-  <!-- Bootstrap JS -->
+  <!-- Collegamento ai file JavaScript di Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("May 31, 2023 00:00:00").getTime();
+    // Imposta la data di fine per il conto alla rovescia (nel formato YYYY-MM-DD HH:MM:SS)
+    var endDate = new Date("2023-12-31 23:59:59");
 
-    // Update the countdown every 1 second
-    var countdown = setInterval(function() {
+    function updateCountdown() {
+      var now = new Date();
+      var timeLeft = endDate - now;
 
-      // Get today's date and time
-      var now = new Date().getTime();
+      // Calcola i giorni, le ore, i minuti e i secondi rimanenti
+      var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
+      // Aggiorna il contenuto del contatore
+      document.getElementById("countdown").innerHTML = days + " giorni " + hours + " ore " + minutes + " minuti " + seconds + " secondi ";
 
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      // Aggiorna il conto alla rovescia ogni secondo
+      setTimeout(updateCountdown, 1000);
+    }
 
-      // Display the result
-      document.getElementById("timer").innerHTML = "<p>Time remaining: " + days + "d " + hours + "h " +
-        minutes + "m " + seconds + "s </p>";
-
-      // If the countdown is finished, display a message
-      if (distance < 0) {
-        clearInterval(countdown);
-        document.getElementById("timer").innerHTML = "<p>Website is now live!</p>";
-      }
-    }, 1000);
+    // Avvia il conto alla rovescia
+    updateCountdown();
   </script>
 </body>
-
 </html>
 <!--
 <!DOCTYPE html> 
