@@ -4,12 +4,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Syphora Antivirus</title>
+  <title>Coming Soon</title>
   <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .countdown {
+      text-align: center;
+    }
+
+    .countdown h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .countdown p {
+      font-size: 18px;
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="countdown">
+      <h1>Coming Soon</h1>
+      <p>We are making some changes and will be back soon!</p>
+      <div id="timer"></div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("May 31, 2023 00:00:00").getTime();
+
+    // Update the countdown every 1 second
+    var countdown = setInterval(function() {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result
+      document.getElementById("timer").innerHTML = "<p>Time remaining: " + days + "d " + hours + "h " +
+        minutes + "m " + seconds + "s </p>";
+
+      // If the countdown is finished, display a message
+      if (distance < 0) {
+        clearInterval(countdown);
+        document.getElementById("timer").innerHTML = "<p>Website is now live!</p>";
+      }
+    }, 1000);
+  </script>
+</body>
+
+</html>
+<!--
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syphora Antivirus</title>
+  <!-- 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="shortcut icon" type="image/png" href="Logo.png">
-  <!-- Custom CSS -->
+  
   <link rel="stylesheet" href="style.css">
   <style>
     body {
@@ -413,7 +496,7 @@
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
+  <!-- Bootstrap JS 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0r4t3V7abxc8LrZ4KODqrWEbuk5Kd6DyKJvz4Fqn2XU0YaaD5xk"
     crossorigin="anonymous"></script>
@@ -426,3 +509,5 @@
 </body>
 
 </html>
+-->
+
