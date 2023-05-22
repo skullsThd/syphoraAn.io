@@ -3,8 +3,12 @@
 	"Sviluppatore": "Francy",
 	"versione_corrente": "1.0.0 beta",
 	"funzioni_attive": [],
-	"funzioni_disabilitate": [],
+	"funzioni_disabilitate": ["plans"],
 	"build_corrente": "1.0.0",
 	"build_in_lavorazione": "1.0.1",
-	"build_future": []
+	"build_future": [],
+	"errorMessage": "Link: plans has been disabled.",
+	"messagesVars": [
+        "plans_functionals_efw1" 
+	],
 }
