@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verification</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
 
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding-top: 50px;
+    }
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .card-body {
+      padding: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      font-weight: bold;
+    }
+
+    .form-group input {
+      border-radius: 5px;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .btn-primary:hover {
+      background-color: #0069d9;
+      border-color: #0062cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Verification Code</h5>
+      </div>
+      <div class="card-body">
+        <p>Please enter the verification code sent to your email:</p>
+        <form>
+          <div class="form-group">
+            <label for="verificationCode">Verification Code</label>
+            <input type="text" class="form-control" id="verificationCode" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Verify</button>
+</form>
+<div class="mt-3">
+<p><strong>Didn't receive the code?</strong></p>
+<p>Check your spam folder or <a href="#">resend the code</a>.</p>
+</div>
+</div>
+</div>
+<div class="mt-3 text-center">
+<p>Back to <a href="#">Sign In</a></p>
+</div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
