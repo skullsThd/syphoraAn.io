@@ -64,24 +64,47 @@
         <h5 class="card-title">Codice Di Verifica</h5>
       </div>
       <div class="card-body">
-        <p>Per Favore Scrivi Il codice di verifica arrivato a questa email:</p>
+        <p>Per Favore Scrivi il codice di verfica arrivato a questa email:</p>
         <form>
           <div class="form-group">
             <label for="verificationCode">Codice Di Verifica</label>
             <input type="text" class="form-control" id="verificationCode" required>
           </div>
-          <button type="submit" class="btn btn-primary">Verify</button>
+          <button type="submit" class="btn btn-primary">Verifica</button>
 </form>
 <div class="mt-3">
-<p><strong>Non Ricevi il Codice?</strong></p>
-<p>Controlla in Spam o <a href="#">Rinvia Il Codice</a>.</p>
+<p><strong>Non ricevi il codice?</strong></p>
+<p>Controlla La tua cartella Spam o <a href="#">Reinvia il Codice</a>.</p>
 </div>
 </div>
 </div>
 <div class="mt-3 text-center">
-<p>Torna Nella pagina <a href="#">Accedi</a></p>
+<p>Back to <a href="#">Accedi</a></p>
 </div>
+<script>// In CreateAccount.html, dopo aver inserito l'indirizzo email e cliccato il pulsante "Next"
+// Salviamo l'indirizzo email in una variabile di sessione o nel local storage
+var email = "esempio@example.com"; // Sostituisci con l'indirizzo email inserito dall'utente
 
+// In verification.html, se l'utente clicca il link "Back to Sign In"
+function redirectToSignIn() {
+  // Reindirizza l'utente alla pagina di login.html
+  window.location.href = "login.html";
+}
+
+// In verification.html, al caricamento della pagina
+window.addEventListener("DOMContentLoaded", function() {
+  // Verifica se è stato salvato un indirizzo email
+  if (email) {
+    // Mostra l'indirizzo email nell'HTML
+    var emailElement = document.getElementById("userEmail");
+    emailElement.textContent = email;
+  }
+
+  // Aggiungi l'evento di click al link "Back to Sign In"
+  var backToSignInLink = document.getElementById("backToSignIn");
+  backToSignInLink.addEventListener("click", redirectToSignIn);
+});
+    </script>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
