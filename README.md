@@ -31,7 +31,7 @@
 
 * Stiamo Per Rilasciare la 1.1 beta
 
-* Il 15 giugno rilasceremo il Software
+* Il 26  giugno rilasceremo il Software
 
 * Stiamo migliorando la scrittura in italiano sul sito
 # Versione
