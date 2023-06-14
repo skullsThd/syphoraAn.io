@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Simulazione delle informazioni delle build
     var builds = [
-        { buildNumber: 1, buildName: "launch software", buildDate: "15/06/2023", expectedVersion: "1.0.1 Beta" },
+        { buildNumber: 1, buildName: "launch software", buildDate: "19/07/2023", expectedVersion: "1.0.1 Beta" },
         // { buildNumber: 2, buildName: "Build Test 2", buildDate: "15/06/2023", expectedVersion: "2.0" },
         // { buildNumber: 3, buildName: "Build Test 3", buildDate: "30/01/2023", expectedVersion: "3.0" }
           // { buildNumber: 4, buildName: "Build Test 3", buildDate: "30/01/2023", expectedVersion: "4.0" }
